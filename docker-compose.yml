@@ -15,3 +15,4 @@ services:
         environment:
             SERVER_URL: http://dtc:8111
             AGENT_NAME: agent
+            TEAMCITY_AGENT_OPTS: -Dproxyset=true -Dhttp.proxyHost=tproxy -Dhttp.proxyPort=8123 -Dhttp.nonProxyHosts=domain.com -Dhttps.proxyHost=tproxy -Dhttps.proxyPort=8123 -Dhttps.nonProxyHosts=domain.com
